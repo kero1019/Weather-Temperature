@@ -10,7 +10,7 @@ function App() {
   // useEffect ot fetch data
   React.useEffect(() => {
     fetch(
-      "http://api.weatherapi.com/v1/forecast.json?key=80d6a359426e4a70ac3200449241906 &q=6 october&days=3&aqi=no&alerts=no",
+      "https://api.weatherapi.com/v1/forecast.json?key=80d6a359426e4a70ac3200449241906 &q=6 october&days=3&aqi=no&alerts=no",
     )
       .then((res) => res.json())
       .then((data) => setWeatherData(data));
